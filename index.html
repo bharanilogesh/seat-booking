@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book your seat</title>
+    <!-- favicon-->
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />    
+
+    <!--fontawesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--normalise CSS-->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+
+    <!--custom CSS-->
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+   <h1 class="tittle">Book Your Movie Seats </h1>    
+    <div class="movie-container">
+     <div class="form-control">
+      <label class="movie-label" for="movie">Pick a movie</label>
+      <select class="movie" id="movie"> 
+      <option value="100">Movie One</option>
+      <option value="200">Movie Two</option>
+      <option value="300">Movie Three</option>
+      <option value="400">Movie Four</option>
+      </select> 
+     </div>
+    </div>
+    <div class="legend-container">
+      <div class="seat-container">
+        <div class="seat"></div>
+        <span>N/A</span>
+      </div>
+      <div class="seat-container">
+        <div class="seat selected"></div>
+        <span>Selected</span>
+      </div>
+      <div class="seat-container">
+        <div class="seat-occupied"></div>
+        <span>Occupied</span>
+      </div>
+    </div>
+    <div class="screen-container">
+      <div class="screen"></div>
+      <div class="seats-container">
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+      </div>
+    </div>
+    <div class="message-container">
+      <p class="message">You have selected <span id="seats-count">5</span> for a total of ₹ 
+        <span id="total-price">400</span>
+      </p>
+    </div>
+  
+  <!--custom JS-->
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>
